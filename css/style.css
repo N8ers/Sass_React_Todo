@@ -1,0 +1,51 @@
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(30rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+body {
+  padding: 3rem;
+  box-sizing: border-box; }
+
+.header {
+  background-color: #FF9EA3;
+  height: 75vh;
+  -webkit-clip-path: circle(60% at 50% 6%);
+  clip-path: circle(60% at 50% 6%);
+  animation: all .4s; }
+  .header--animated {
+    animation: moveInTop .5s ease-out .5s;
+    animation-fill-mode: backwards; }
+
+.table {
+  border-collapse: collapse;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid black;
+  display: inline-block;
+  height: 100px; }
+  .table:nth-child(even) {
+    background-color: #D9FFD5; }
+  .table:nth-child(odd) {
+    background-color: #D5FFFB; }
+
+.center {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: inline-block; }
