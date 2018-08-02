@@ -1,0 +1,15 @@
+.header {
+    background-color: $color-main-red;
+    height: 90vh;
+    -webkit-clip-path: circle(83.6% at 50% 11%);
+    clip-path: circle(83.6% at 50% 11%);
+
+    &--animated {
+        animation: moveInTop .5s ease-out .5s;
+        animation-fill-mode: backwards;
+    }
+}
+
+.main {
+
+}

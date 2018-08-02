@@ -2,3 +2,12 @@ $color-main-green: #A6FE9D;
 $color-main-red: #FF9EA3;
 $color-table-even: #D9FFD5;
 $color-table-odd: #D5FFFB;
+
+.center {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: inline-block;
+}
